@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="color-scheme" content="dark">
+  <title>点亮洞窟</title>
+  <link rel="icon" href="data:,">
+  <link rel="stylesheet" href="vendor/pannellum.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/pannellum.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main id="stage" data-state="booting" tabindex="0" aria-label="洞窟全景，可在点亮后拖动查看">
+    <img id="poster" alt="洞窟静态示意图" hidden>
+    <div id="panorama" aria-label="全景画面"></div>
+    <div id="shade" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <section id="intro" aria-labelledby="intro-title">
+      <span class="eyebrow">A JOURNEY INTO LIGHT</span>
+      <h1 id="intro-title">点亮洞窟</h1>
+      <p>借一束光，看见岩壁上的时间。</p>
+      <button id="light" class="light-switch" type="button" disabled>
+        <span class="lamp" aria-hidden="true">✧</span><span>点亮洞窟</span>
+      </button>
+      <small>拖动环视 · 点击光标探索</small>
+    </section>
+    <header id="hud" hidden>
+      <div class="chapter"><span class="eyebrow" id="scene-index"></span><h2 id="scene-title"></h2><p id="scene-subtitle"></p></div>
+      <button id="history" type="button">展览导读 <span aria-hidden="true">↗</span></button>
+    </header>
+    <div id="waiting" role="status" aria-live="polite"><span id="waiting-text">正在唤醒空间</span><span class="loading-track" aria-hidden="true"></span></div>
+    <div class="bottom-ui" id="controls" hidden>
+      <div class="control-row">
+        <button id="dark" type="button">↶ 熄灯</button>
+        <div class="view-controls" aria-label="视角控制">
+          <button id="zoom-in" type="button" aria-label="放大全景">＋</button>
+          <button id="zoom-out" type="button" aria-label="缩小全景">−</button>
+          <button id="reset" type="button" aria-label="复位当前视角">↺</button>
+          <button id="rotate" type="button" aria-pressed="false">环视</button>
+          <button id="fullscreen" type="button" aria-label="全屏展示">⛶</button>
+        </div>
+      </div>
+      <nav id="scenes" aria-label="选择展室"></nav>
+    </div>
+    <footer class="source-line"><span id="provenance">原创程序示意空间 · 非真实洞窟复原</span><button id="about" type="button">素材说明</button></footer>
+    <p id="notice" role="status" aria-live="polite" hidden></p>
+  </main>
+  <dialog id="reading" aria-labelledby="reading-title">
+    <div class="reading-top"><span class="eyebrow">FIELD NOTES</span><button id="close-reading" type="button" aria-label="关闭解读">×</button></div>
+    <h2 id="reading-title"></h2><div id="reading-body"></div>
+  </dialog>
+  <noscript>此全景需要 JavaScript。您仍可在工程 panoramas 目录查看示意图片。</noscript>
+</body>
+</html>

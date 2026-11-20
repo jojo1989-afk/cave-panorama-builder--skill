@@ -1,0 +1,50 @@
+{
+  "title": "点亮洞窟",
+  "firstScene": "main",
+  "introduction": "借一束光，看见岩壁上的时间。本展是全景交互示范，三个展室为原创程序绘制的虚构空间。它们展示球面环视与热点换景，不是实际敦煌洞窟的测绘或复原。",
+  "scenes": {
+    "main": {
+      "title": "主窟 · 光与壁色",
+      "subtitle": "从一束微光开始，环视虚构岩窟的壁色与造像。",
+      "panorama": "panoramas/main.png",
+      "poster": "panoramas/main.png",
+      "pitch": 3,
+      "yaw": 0,
+      "hfov": 95,
+      "provenance": {"kind": "illustrative", "statement": "原创程序示意空间 · 非真实洞窟复原"},
+      "hotSpots": [
+        {"id": "to-rest", "kind": "scene", "label": "前往 · 静观殿", "pitch": -7, "yaw": -52, "target": "rest"},
+        {"id": "to-pillar", "kind": "scene", "label": "前往 · 环廊", "pitch": -7, "yaw": 52, "target": "pillar"},
+        {"id": "color", "kind": "info", "label": "壁色笔记", "pitch": 10, "yaw": 25, "title": "壁色 · 岩壁上的层次", "body": "在这一虚构空间里，赭石、沙色与褪色青绿组织了安静的观看节奏。浅色轮廓帮助主体从深色壁龛中显现。\n\n这里的图形由程序绘制，只用于演示全景投影和热点定位，不对应真实文物，也不提供年代鉴定。替换为你的全景图后，请重新校准此标记。"}
+      ]
+    },
+    "rest": {
+      "title": "静观殿 · 横向的时间",
+      "subtitle": "换一个机位，在横向构图中停留片刻。",
+      "panorama": "panoramas/rest.png",
+      "poster": "panoramas/rest.png",
+      "pitch": -2,
+      "yaw": 0,
+      "hfov": 95,
+      "provenance": {"kind": "illustrative", "statement": "原创程序示意空间 · 非真实洞窟复原"},
+      "hotSpots": [
+        {"id": "back-main", "kind": "scene", "label": "返回 · 主窟", "pitch": -9, "yaw": -48, "target": "main"},
+        {"id": "relief", "kind": "info", "label": "观看笔记", "pitch": 6, "yaw": 26, "title": "停留 · 横向构图", "body": "本展室用横向形体与重复壁龛练习不同的空间节奏。它与主窟共享色彩，但拥有独立的机位和热点。\n\n热点跳转是切换另一张全景，画面中没有连续行走或实体碰撞。"}
+      ]
+    },
+    "pillar": {
+      "title": "环廊 · 塔柱与光",
+      "subtitle": "围绕一个视觉锚点，寻找空间的方向。",
+      "panorama": "panoramas/pillar.png",
+      "poster": "panoramas/pillar.png",
+      "pitch": 5,
+      "yaw": 0,
+      "hfov": 95,
+      "provenance": {"kind": "illustrative", "statement": "原创程序示意空间 · 非真实洞窟复原"},
+      "hotSpots": [
+        {"id": "back-main", "kind": "scene", "label": "返回 · 主窟", "pitch": -9, "yaw": -52, "target": "main"},
+        {"id": "structure", "kind": "info", "label": "空间笔记", "pitch": 10, "yaw": 28, "title": "方向 · 塔柱与环廊", "body": "塔柱让画面拥有明确的前景与遮挡，帮助观看者判断方向。这里的塔柱是程序示意形体，不代表具体历史洞窟。\n\n如果要真正走到塔柱背后，需要补充不同机位，或者制作可移动相机的三维几何场景。"}
+      ]
+    }
+  }
+}

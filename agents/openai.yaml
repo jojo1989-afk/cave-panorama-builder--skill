@@ -1,0 +1,4 @@
+interface:
+  display_name: "洞窟全景漫游"
+  short_description: "拆解洞窟光影与交互，搭建可点亮、拖动和切换场景的全景展馆"
+  default_prompt: "使用 $cave-panorama-builder，制作敦煌意象的虚构洞窟全景，包含点亮洞窟、三场景漫游与壁画解读。"

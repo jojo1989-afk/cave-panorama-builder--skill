@@ -1,0 +1,20 @@
+{
+  "name": "Pannellum",
+  "version": "2.5.7",
+  "checkedAt": "2026-11-04",
+  "officialDownloadPage": "https://pannellum.org/download/",
+  "files": {
+    "pannellum.js": {
+      "url": "https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.js",
+      "sha256": "51b8df674333612adbd807b6f47940d4d7aa07317d949d3f1314f84de965fc3c"
+    },
+    "pannellum.css": {
+      "url": "https://cdn.jsdelivr.net/npm/pannellum@2.5.7/build/pannellum.css",
+      "sha256": "da0906e704524cca414ce6160c7be218048dcdd0c13fafa84184f6ea0b084785"
+    },
+    "PANNELLUM-LICENSE.txt": {
+      "url": "https://cdn.jsdelivr.net/npm/pannellum@2.5.7/COPYING",
+      "sha256": "e20b384f83f8f580d69e32d2419e093d777830689b3ab48cafbe4284b6ebc3c1"
+    }
+  }
+}
